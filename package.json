@@ -17,17 +17,19 @@
   },
   "dependencies": {
     "@astrojs/react": "^2.0.2",
+    "@react-three/drei": "^9.56.20",
+    "@react-three/fiber": "^8.11.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@types/three": "^0.149.0",
     "astro": "^2.0.9",
+    "eslint-import-resolver-alias": "^1.1.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "three": "^0.149.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.4.2",
-    "@commitlint/config-conventional": "^17.4.2",
-    "@typescript-eslint/eslint-plugin": "^5.38.1",
-    "@typescript-eslint/parser": "^5.51.0",
+    "husky": "^8.0.3",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-node": "^0.3.6",
@@ -37,8 +39,11 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "husky": "^8.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.51.0",
     "lint-staged": "^13.1.1",
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
     "prettier": "^2.8.4",
     "prettier-plugin-astro": "^0.8.0"
   }

@@ -15,6 +15,16 @@
       "version": "detect"
     },
     "import/resolver": {
+      "alias": {
+        "extensions": [".ts", ".tsx", ".astro"],
+        "map": [
+          ["@assets", "./src/assets/"],
+          ["@components", "./src/components/"],
+          ["@layouts", "./src/layouts/"],
+          ["@utils", "./src/utils/"],
+          ["@types", "./src/types.ts"]
+        ]
+      },
       "typescript": {
         "alwaysTryTypes": true
       }
@@ -31,6 +41,17 @@
       "rules": {}
     },
     {
+      "files": ["*.tsx"],
+      "extends": [
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime",
+        "plugin:jsx-a11y/recommended"
+      ],
+      "rules": {
+        "react/no-unknown-property": "off"
+      }
+    },
+    {
       "files": ["*.ts", "*.tsx"],
       "extends": [
         "plugin:@typescript-eslint/recommended",
@@ -38,14 +59,6 @@
         "plugin:react-hooks/recommended"
       ],
       "rules": {}
-    },
-    {
-      "files": ["*.tsx"],
-      "extends": [
-        "plugin:react/recommended",
-        "plugin:react/jsx-runtime",
-        "plugin:jsx-a11y/recommended"
-      ]
     }
   ]
 }
